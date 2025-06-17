@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "72a44ff2-75fd-4469-885e-e626694d2db2",
+		"name": "TODO app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43917971",
+		"_collection_link": "https://robert-3369759.postman.co/workspace/Robert's-Workspace~56c4b8f6-579f-4da5-8476-f9cd47bb960d/collection/43917971-72a44ff2-75fd-4469-885e-e626694d2db2?action=share&source=collection_link&creator=43917971"
+	},
+	"item": [
+		{
+			"name": "Register a new user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create a new task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get all tasks from logged in user(pending)",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "update a task's status",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a task",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

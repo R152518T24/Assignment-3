@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<h2>Your Tasks</h2>
+
+<form method="POST" action="/tasks">
+  <input name="title" placeholder="New task" required />
+  <button type="submit">Add Task</button>
+</form>
+
+<ul class="task-list">
+  <% tasks.forEach(task => { %>
+    <li>
+      <strong><%= task.title %></strong>
+      <span class="status">[<%= task.status %>]</span>
+      <% if (task.status === 'pending') { %>
+        <form method="POST" action="/tasks/<%= task._id %>?_method=PUT" style="display:inline">
+          <input type="hidden" name="status" value="completed" />
+          <button type="submit">Complete</button>
+        </form>
+      <% } %>
+    </li>
+  <% }) %>
+</ul>
+
+<%- include('partials/footer') %>
