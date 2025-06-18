@@ -7,7 +7,7 @@ const User = require('../models/user');
 const Task = require('../models/tasks');
 const bcrypt = require('bcrypt')
 jest.setTimeout(20000);
-let token; // to hold JWT
+let token; 
 let taskId;
 
 beforeAll(async () => {
@@ -109,9 +109,9 @@ describe('Task Endpoints', () => {
   });
 });
 
- // ✅ NEW TEST: Filtering by status
+ 
   it('should return only tasks with status "pending"', async () => {
-    // Create one pending and one completed task
+   
     await request(app)
       .post('/api/tasks')
       .set('Authorization', `Bearer ${token}`)
