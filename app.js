@@ -23,6 +23,10 @@ app.use(session({ secret: 'todo_secret', resave: false, saveUninitialized: true 
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res) => {
+  res.send('Todo app is alive');
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/tasks', taskRoutes); 
 
